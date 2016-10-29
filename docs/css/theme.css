@@ -40,7 +40,7 @@ img {
     position: absolute;
     top: 65%;
     left: 50%;
-    color: transparent;
+    x: transparent;
     /* Update the circle character below, sass supports utf-8 */
     content: '\b0';
     text-shadow: 0 0 transparent;
@@ -65,8 +65,8 @@ img {
   font-family: 'Kalam', cursive;
   font-size: 50px; }
 .dp-box .dp {
-  border-radius: 50%;
-  padding: 10px; }
+  padding: 0px; 
+  margin-left: 200px;}
 
 .social-buttons .btn-circle {
   padding: 12px;
@@ -127,10 +127,10 @@ img {
   width: 100% !important;
   margin: 0 auto; }
   #bb-first-page h1 {
-    font-size: 90px;
+    font-size: 30px;
     color: white;
     text-shadow: 1px 1px 5px black;
-    font-family: 'Revalia', cursive; }
+    font-family: 'Smythe' }
   #bb-first-page h2 {
     color: white; }
   #bb-first-page p {
