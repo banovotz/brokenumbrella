@@ -1,0 +1,19 @@
+section_id: "problem"
+heading: "Standard CAT tools were built for manuals, not prose."
+subheading: "As a literary, academic, or journal translator, commercial software often gets in your way instead of helping:"
+
+pain_points:
+  - id: "rigid-segments"
+    title: "Rigid Segment-by-Segment Breakdowns"
+    description: "Storytelling, essays, and academic arguments flow in paragraphs, metaphors, and rhythm—not isolated sentence fragments."
+    icon: "grid_off"
+
+  - id: "character-counts"
+    title: "Character Counts vs. Words"
+    description: "Publishing houses and journals calculate rates, pages, and contracts based on character counts (with spaces) or standardized pages, not simple word counts."
+    icon: "pin"
+
+  - id: "unpredictable-deadlines"
+    title: "Unpredictable Deadlines"
+    description: "Balancing a long-form novel or multi-paper journal deadline with real-world writing speeds requires accurate daily pacing, not guesswork."
+    icon: "schedule"

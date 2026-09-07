@@ -1,0 +1,14 @@
+section_id: "story"
+badge: "Behind the Code"
+heading: "Born Out of Real-World Literary Workflows"
+subheading: "How a literary translator built the missing tool for manuscript pacing and textual precision."
+
+paragraphs:
+  - text: "Managing multiple book translation projects across different publishing houses at the same time quickly reveals a gap in standard software. Commercial CAT tools treat literature like technical manuals, while generic spreadsheets force you into endless manual math just to answer two basic questions: *Am I on track for my deadline?* and *What are my actual projected earnings?*"
+  - text: "mojih1500 was created directly at the translation desk to solve these exact friction points. It combines character-based pacing (calculated in standard translation pages, or *kartice*), dynamic daily targets, and instant ePub and Google Docs progress fetching into a single, quiet workspace."
+  - text: "Beyond tracking deadlines and finances, long-form prose demands deep narrative consistency. The built-in textual analysis and concordance engine provides lightweight QA—helping you verify key terminology, track recurring character names, and compare source and draft side-by-side without forcing your sentences into rigid, segmented boxes."
+
+quote:
+  text: "Literature isn't written in isolated segments. We needed a workspace that respects narrative flow while giving us absolute clarity over our deadlines and income."
+  author: "Davor Banović"
+  role: "Literary Translator & Creator of mojih1500"

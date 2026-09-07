@@ -1,0 +1,157 @@
+---
+layout: default
+title: "mojih1500 - Translation Pacing & Workspace for Literary Translators"
+---
+
+<!-- HERO SECTION -->
+<section class="hero-section">
+  <!-- Pozadinska WebP Animacija -->
+  <picture class="hero-bg-picture">
+    <source srcset="{{ '/assets/images/hero.webp' | relative_url }}" type="image/webp">
+    <img src="{{ '/assets/images/hero.webp' | relative_url }}" alt="Background Animation" class="hero-bg-img" loading="eager">
+  </picture>
+
+  <!-- Tamni sloj za čitljivost teksta -->
+  <div class="hero-overlay"></div>
+
+  <!-- Hero Sadržaj -->
+  <div class="container hero-content">
+    <h1 class="hero-title">
+      Master Your Translation Pacing.<br>
+      <span class="hero-title-highlight">Keep Your Literary Voice.</span>
+    </h1>
+    <p class="hero-description">
+      The all-in-one workspace designed specifically for literary, academic, and journal translators. Track character-based progress, pace deadlines effortlessly, and analyze text concordance—without forcing your narrative into rigid CAT tool segments.
+    </p>
+    
+    <div class="hero-actions">
+      <a href="#app" class="btn-primary">Start Tracking Free</a>
+      <a href="#features" class="btn-secondary">See How It Works</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM / EMPATHY SECTION -->
+{% assign problem = site.data.problem %}
+<section id="{{ problem.section_id }}" class="section-problem">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">{{ problem.heading }}</h2>
+      <p class="section-subheading">{{ problem.subheading }}</p>
+    </div>
+
+    <div class="grid-three-col">
+      {% for point in problem.pain_points %}
+        <div class="pain-card">
+          <div class="pain-icon">📌</div>
+          <h3 class="pain-title">{{ point.title }}</h3>
+          <p class="pain-description">{{ point.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- THE STORY SECTION -->
+{% assign story = site.data.story %}
+<section id="{{ story.section_id }}" class="section-story">
+  <div class="container story-container">
+    <div class="story-content">
+      {% if story.badge %}
+        <span class="story-badge">{{ story.badge }}</span>
+      {% endif %}
+      <h2 class="section-title story-title">{{ story.heading }}</h2>
+      <p class="story-subheading">{{ story.subheading }}</p>
+
+      <div class="story-body">
+        {% for paragraph in story.paragraphs %}
+          <p>{{ paragraph.text }}</p>
+        {% endfor %}
+      </div>
+
+      {% if story.quote %}
+        <blockquote class="story-quote">
+          <p>“{{ story.quote.text }}”</p>
+          <cite>
+            <strong>{{ story.quote.author }}</strong>
+            <span>{{ story.quote.role }}</span>
+          </cite>
+        </blockquote>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<!-- UNIQUE VALUE PROPOSITION & FEATURES SECTION -->
+{% assign features = site.data.features %}
+<section id="{{ features.section_id }}" class="section-features">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">{{ features.heading }}</h2>
+      <p class="section-subheading">{{ features.subheading }}</p>
+    </div>
+
+    <div class="grid-three-col">
+      {% for feat in features.features_list %}
+        <div class="feature-card">
+          {% if feat.badge %}
+            <span class="feature-badge">{{ feat.badge }}</span>
+          {% endif %}
+          <h3 class="feature-title">{{ feat.title }}</h3>
+          <p class="feature-description">{{ feat.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE COMPARISON MATRIX SECTION -->
+{% assign comp = site.data.comparison %}
+<section id="{{ comp.section_id }}" class="section-comparison">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">{{ comp.heading }}</h2>
+      <p class="section-subheading">{{ comp.subheading }}</p>
+    </div>
+
+    <div class="table-responsive">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            {% for col in comp.columns %}
+              <th>
+                {% if col.key == 'our_app' %}
+                  <strong>{{ comp.app_name }}</strong>
+                {% else %}
+                  {{ col.label }}
+                {% endif %}
+              </th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in comp.rows %}
+            <tr>
+              <td class="col-feature">{{ row.feature }}</td>
+              <td class="col-muted">{{ row.cat_tools }}</td>
+              <td class="col-muted">{{ row.spreadsheets }}</td>
+              <td class="col-highlight">{{ row.our_app }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CALL TO ACTION SECTION -->
+<section class="section-cta">
+  <div class="container cta-container">
+    <h2 class="cta-title">Ready to bring structure to your manuscript workflow?</h2>
+    <p class="cta-description">
+      Join translators who spend less time managing spreadsheets and more time crafting prose.
+    </p>
+    <a href="#app" class="btn-cta">Launch Application</a>
+    <p class="cta-note">No credit card required. Works completely in your browser.</p>
+  </div>
+</section>
