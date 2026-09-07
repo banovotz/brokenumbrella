@@ -7,23 +7,28 @@ features_list:
     title: "Smart Pacing & Deadline Management"
     description: "Set your total page or character target, start and end dates, and weekend preferences. The app continuously calculates your Required Daily Pace vs. your Planned Daily Pace, warning you in advance if you're falling behind schedule."
     badge: "Core Feature"
+    image: "/assets/images/mockups/pacing-dashboard.png"
 
   - id: "integrations"
     title: "Native ePub & Google Docs Integration"
     description: "Fetch progress instantly. Parse your original .epub source file to determine absolute volume, and connect directly to your working Google Doc to sync your translation progress in real time."
     badge: "Automation"
+    image: "/assets/images/mockups/epub-gdoc-sync.png"
 
   - id: "analysis"
     title: "Deep Textual & Concordance Analysis"
     description: "Maintain terminology consistency across a 100,000-word manuscript. Extract key phrases, analyze character/term occurrences, and run concordance checks between source text and your translation without losing context."
     badge: "Concordance"
+    image: "/assets/images/mockups/concordance-analysis.png"
 
   - id: "metrics"
     title: "Character-Accurate Progress Tracking"
     description: "Ditch manual spreadsheet formulas. Automatically calculate progress using precise character counts (with spaces) and standard translation page metrics, giving you and your publishers crystal-clear status updates."
     badge: "Metrics"
+    image: "/assets/images/mockups/character-metrics.png"
 
   - id: "privacy"
     title: "Local-First & Privacy-Focused"
     description: "Your intellectual property stays yours. Built as a PWA with local storage (IndexedDB), your manuscripts, drafts, and source files stay in your browser and on your machine."
     badge: "Security"
+    image: "/assets/images/mockups/local-first-storage.png"

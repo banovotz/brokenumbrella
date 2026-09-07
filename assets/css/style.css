@@ -255,7 +255,7 @@ body {
 
 .hero-overlay {
   z-index: 2;
-  background: linear-gradient(135deg, rgba(17, 24, 39, 0.85) 0%, rgba(0, 128, 128, 0.4) 100%);
+  background: linear-gradient(135deg, rgba(112, 152, 137, 0.971) 0%, rgba(131, 6, 85, 0.4) 100%);
 }
 
 .hero-content {
@@ -557,4 +557,136 @@ body {
 .story-quote cite span {
   color: #718096;
   font-size: 0.85rem;
+}
+
+/* Feature Cards & Mockup Container */
+.feature-card {
+  background: var(--color-bg-card);
+  padding: 2.2rem;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--color-primary);
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.feature-mockup-wrapper {
+  margin-top: 1.5rem;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--color-bg-paper);
+  border: 1px solid rgba(0, 128, 128, 0.12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.feature-mockup-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-mockup-img {
+  transform: scale(1.02);
+}
+
+.feature-mockup-placeholder {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px dashed var(--color-primary);
+  border-radius: 8px;
+}
+
+/* ==========================================================================
+   Hero Feature Summary (Centered Bullets)
+   ========================================================================== */
+
+.hero-feature-summary {
+  max-width: 820px;
+  margin: 2.5rem auto 0;
+  text-align: center;
+}
+
+.hero-lead-text {
+  font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.hero-lead-text strong {
+  color: #4dd0e1; /* Svijetla teal nijansa za naglasak */
+  font-weight: 600;
+}
+
+/* Centralno poravnata lista s natuknicama */
+.hero-bullets {
+  
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.hero-bullets li {
+  font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+  position: relative;
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  max-width: 720px;
+  padding-left: 1.75rem;
+  text-align: center;
+}
+
+/* Prilagođeni kružni bullet indikator u liniji s tekstom */
+.hero-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  background-color: #008080;
+  border: 2px solid #4dd0e1;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(77, 208, 225, 0.6);
+}
+
+.hero-bullets .bullet-title {
+  font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+  font-weight: 900;
+  color: #ffffff;
+}
+
+/* Responzivne prilagodbe za mobilne ekrane */
+@media (max-width: 640px) {
+  .hero-bullets {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .hero-bullets li {
+    text-align: left;
+  }
 }

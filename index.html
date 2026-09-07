@@ -17,13 +17,20 @@ title: "mojih1500 - Translation Pacing & Workspace for Literary Translators"
   <!-- Hero Sadržaj -->
   <div class="container hero-content">
     <h1 class="hero-title">
-      Master Your Translation Pacing.<br>
-      <span class="hero-title-highlight">Keep Your Literary Voice.</span>
+      Translating Prose or Articles?<br>
+      <span class="hero-title-highlight">The Literary Translator's Quiet Studio.</span>
     </h1>
     <p class="hero-description">
-      The all-in-one workspace designed specifically for literary, academic, and journal translators. Track character-based progress, pace deadlines effortlessly, and analyze text concordance—without forcing your narrative into rigid CAT tool segments.
-    </p>
-    
+<div class="hero-feature-summary">
+
+   <p class="hero-lead-text"> <strong> Track & Visualise:</strong> Follow progress and gain clear visibility over deadlines.</p>
+   <p class="hero-lead-text"> <strong>Parallel Workspace:</strong> View texts side-by-side with glossary and concordance.</p>
+   <p class="hero-lead-text"><strong>Intelligent QA:</strong> Refine with inline AI commentary that never alters your text.</p>
+  
+  
+</div>
+
+
     <div class="hero-actions">
       <a href="#app" class="btn-primary">Start Tracking Free</a>
       <a href="#features" class="btn-secondary">See How It Works</a>
@@ -43,7 +50,13 @@ title: "mojih1500 - Translation Pacing & Workspace for Literary Translators"
     <div class="grid-three-col">
       {% for point in problem.pain_points %}
         <div class="pain-card">
-          <div class="pain-icon">📌</div>
+          {% if point.id == 'how-long' %}
+          <div class="pain-icon">📆</div>
+        {% elsif point.id == 'how-much' %}
+          <div class="pain-icon">💶</div>
+        {% elsif point.id == 'any-mistake' %}
+          <div class="pain-icon">🚩</div>  
+          {% endif %}
           <h3 class="pain-title">{{ point.title }}</h3>
           <p class="pain-description">{{ point.description }}</p>
         </div>
@@ -97,8 +110,20 @@ title: "mojih1500 - Translation Pacing & Workspace for Literary Translators"
           {% if feat.badge %}
             <span class="feature-badge">{{ feat.badge }}</span>
           {% endif %}
+          
           <h3 class="feature-title">{{ feat.title }}</h3>
           <p class="feature-description">{{ feat.description }}</p>
+
+          <!-- Prostor za Mockup / Screenshot -->
+          <div class="feature-mockup-wrapper">
+            {% if feat.image %}
+              <img src="{{ feat.image | relative_url }}" alt="{{ feat.title }} screenshot" class="feature-mockup-img" loading="lazy">
+            {% else %}
+              <div class="feature-mockup-placeholder">
+                <span>App Screenshot Placeholder</span>
+              </div>
+            {% endif %}
+          </div>
         </div>
       {% endfor %}
     </div>
