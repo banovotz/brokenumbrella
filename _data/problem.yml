@@ -1,6 +1,6 @@
 section_id: "problem"
-heading: "A tool designed by a literary translator, <strong>specifically for their peers</strong>."
-subheading: "As a literary, academic, or journal translator, commercial software often gets in your way instead of helping. Our tool is built arround questions evert translators has when the project ramps up:"
+heading: "A tool designed by a literary translator, <strong>specifically for their peers</strong>,"
+subheading: "...built arround questions every translators has when a translation project ramps up:"
 
 pain_points:
   - id: "how-long"
