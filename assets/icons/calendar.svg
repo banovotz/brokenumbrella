@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <!-- Pozadina kartice -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#F8F9FA" stroke="#E5E7EB" stroke-width="2"/>
+  
+  <!-- Telo kalendara -->
+  <rect x="12" y="14" width="40" height="40" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="2"/>
+  <path d="M12 24H52" fill="none" stroke="#008080" stroke-width="2"/>
+  
+  <!-- Zakačke kalendara -->
+  <path d="M22 10V16" stroke="#008080" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M42 10V16" stroke="#008080" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Redovi s danima / linije teksta -->
+  <rect x="18" y="30" width="6" height="4" rx="1" fill="#E5E7EB"/>
+  <rect x="29" y="30" width="6" height="4" rx="1" fill="#E5E7EB"/>
+  <rect x="40" y="30" width="6" height="4" rx="1" fill="#E5E7EB"/>
+  <rect x="18" y="38" width="6" height="4" rx="1" fill="#E5E7EB"/>
+  <rect x="29" y="38" width="6" height="4" rx="1" fill="#E5E7EB"/>
+  
+  <!-- Zaokruženi rok (Ciljani datum / Deadline) -->
+  <circle cx="43" cy="40" r="6.5" stroke="#008080" stroke-width="2" fill="#E0F2F1" stroke-dasharray="32" stroke-dashoffset="0"/>
+  <circle cx="43" cy="40" r="2.5" fill="#008080"/>
+  
+  <!-- Vremenska crta napretka (Timeline bar na dnu kalendara) -->
+  <path d="M18 48H35" stroke="#008080" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M35 48H46" stroke="#E5E7EB" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

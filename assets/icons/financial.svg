@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <!-- Pozadina kartice -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#F8F9FA" stroke="#E5E7EB" stroke-width="2"/>
+  
+  <!-- Lisnica / Financijski modul -->
+  <rect x="12" y="22" width="40" height="28" rx="5" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="2"/>
+  <path d="M12 30H52" stroke="#E5E7EB" stroke-width="1.5"/>
+  
+  <!-- Kopča lisnice s tirkiznim akcentom -->
+  <rect x="38" y="32" width="14" height="10" rx="3" fill="#E0F2F1" stroke="#008080" stroke-width="1.5"/>
+  <circle cx="42" cy="37" r="1.5" fill="#008080"/>
+  
+  <!-- Rastuća linija zarade / Trend (izlazi iz lisnice prema gore) -->
+  <path d="M18 20L28 14L36 17L46 10" stroke="#008080" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="46" cy="10" r="3" fill="#008080"/>
+  
+  <!-- Oznaka valute (€) u pozadini -->
+  <path d="M22 36C21 36 20 37 20 38.5C20 40 21 41 22 41" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M19 38H23" stroke="#9CA3AF" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M19 39.5H23" stroke="#9CA3AF" stroke-width="1.2" stroke-linecap="round"/>
+</svg>
