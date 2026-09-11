@@ -4,11 +4,11 @@ heading: "Born Out of Real-World Literary Workflows"
 subheading: "How a literary translator built the missing tool for manuscript pacing and textual precision."
 
 paragraphs:
-  - text: "Managing multiple book translation projects across different publishing houses at the same time quickly reveals a gap in standard software. Commercial CAT tools treat literature like technical manuals, while generic spreadsheets force you into endless manual math just to answer two basic questions: *Am I on track for my deadline?* and *What are my actual projected earnings?*"
-  - text: "mojih1500 was created directly at the translation desk to solve these exact friction points. It combines character-based pacing (calculated in standard translation pages, or *kartice*), dynamic daily targets, and instant ePub and Google Docs progress fetching into a single, quiet workspace."
-  - text: "Beyond tracking deadlines and finances, long-form prose demands deep narrative consistency. The built-in textual analysis and concordance engine provides lightweight QA—helping you verify key terminology, track recurring character names, and compare source and draft side-by-side without forcing your sentences into rigid, segmented boxes."
+  - text: "Managing multiple book translation projects across different publishing houses at the same time quickly reveals a gap in standard software. Commercial CAT tools treat literature like technical manuals, while generic spreadsheets force you into endless manual math just to answer three basic questions: *Am I on track for my deadline?*, *What are my actual projected earnings?* and *How much mistakes i still have to handle?*" 
+  - text: "pagenorma was created directly at the translation desk to solve these exact friction points. It combines character or page based pacing (calculated in standard translation pages of 1800 character with spaces), dynamic daily targets, and instant integration of source text (ePub, PDF) and translation txt (Word and Google Docs integration)."
+  - text: "Beyond tracking deadlines and finances, long-form prose demands deep narrative consistency. The built-in textual analysis with glossary and concordance engine provides lightweight QA—helping you verify key terminology, track recurring terms and phrases, and compare source and draft side-by-side without."
 
 quote:
-  text: "Literature isn't written in isolated segments. We needed a workspace that respects narrative flow while giving us absolute clarity over our deadlines and income."
+  text: "We needed a workspace that helps us proofread and improve our translation text while giving us absolute clarity over our deadlines and income."
   author: "Davor Banović"
-  role: "Literary Translator & Creator of mojih1500"
+  role: "Literary Translator & Creator of pagenorma"
